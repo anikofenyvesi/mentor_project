@@ -7,6 +7,6 @@ class Mentor(models.Model):
     description = models.TextField(blank=True)
     
 class Opinion(models.Model):
-    question = models.ForeignKey(Mentor)
+    mentor = models.ForeignKey(Mentor)
     name = models.CharField(max_length=50)
     description = models.TextField()
